@@ -58,7 +58,7 @@ def train_and_save_models():
     st.info("🔄 Training models for first-time setup...")
 
     df = pd.read_csv(
-        r"C:\ReseaRCH\AI in HVAC\Sample data for ML Model - Copy.csv"
+        r"Sample data for ML Model - Copy.csv"
     )
 
     df["RSHF"] = df["RSH"] / (df["RSH"] + df["RLH"])
@@ -245,3 +245,4 @@ if os.path.exists(f"{DATA_DIR}/prediction_history.csv"):
     st.pyplot(fig2)
 else:
     st.info("No historical data yet.")
+
